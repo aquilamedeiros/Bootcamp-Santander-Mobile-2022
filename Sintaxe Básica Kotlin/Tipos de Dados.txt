@@ -1,0 +1,25 @@
+TIPOS DE DADOS
+
+* Int
+* Long
+* Float
+* Double
+* Array
+* Boolean
+* Char
+* Byte
+* Short
+* Null
+
+
+CONVERTER DADO
+
+* toByte() -> Converter para Byte
+* toShort() -> Converter para Short
+* toInt() -> Converter para Int
+* toLong() -> Converter para Long
+* toFloat() -> COnverter para Float
+* toDouble() -> Converter para Double
+* toChar() -> Converter para Char
+
+ 

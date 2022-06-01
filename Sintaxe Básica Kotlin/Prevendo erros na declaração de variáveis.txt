@@ -1,0 +1,48 @@
+		################################################
+		#  PROSSÍVEIS ERROS NA DECLARAÇÃO DE VARIÁVEL  #
+		################################################
+
+# ERRO 01
+fun main(){
+	var currentAge -> Valor não atribuido (Valor: 22) ou especifi-
+		          car o tipo de variável (Int, Float....)
+	currentAge = 22 //ERRO! -> This variable must either have a type
+                                   annotation or be initialized
+}
+
+# Resolução 1 do ERRO 01
+fun main(){
+	var currentAge = 90
+	println(currentAge)
+}
+# Resolução 2 do ERRO01
+fun main(){
+	var currentAge:Int
+	currentAge = 90
+	println(currentAge)
+}
+
+#OBS¹.:
+Uma variável não pode ser declarada sem tipo e sem atribuição
+
+# ERRO 02
+fun main(){
+	var currentYear = "Ano" -> Atribuindo um valor Int (2021) em
+				   uma variável do tipo String ("Ano")
+	currentYear = 2021 // ERRO! -> The integer literal does not
+				       conform to the expected type String
+}
+
+# Resoluão do ERRO 02: Convertendo o valor 2021 para String
+fun main(){
+	var currentYear = "Ano"
+	currentYear = 2022.toString() + " vai ser melhor"
+	println(currentYear)
+}
+
+#OBS².:
+Uma variável com inferência de tipo só receberá valores do mesmo tipo
+que a sua primeira atribuiçãos
+
+#OBS³.:
+uma variável não pode ser declarada sem um tipo ou atribuição

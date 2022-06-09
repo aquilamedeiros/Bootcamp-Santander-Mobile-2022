@@ -1,0 +1,64 @@
+		MANIPULAÇÃO DE STRINGS
+
+* Strings possuem diversos métodos associados;
+* Indexação, concatenação, comparação, formatação;
+* Pode ser concatenado com plus/+;
+* Também é tratada como um array de Char;
+
+
+# Indexação
+
+* String como array;
+* first(), last(), string.length, string[index]
+    * first() -> acessa a primeira posição do array
+    * last() -> acessa a última posição do array
+    * length() -> tamanho do array
+
+#Ex.:
+fun main(){
+	val nome = "Olá, Mundo!"
+	println(nome[0]) // imprime O
+	println(nome.first()) // imprime O
+
+	println(nome.length(-1)) // imprime !
+	println(nome.last()) // imprime !
+}
+
+
+# Concatenação
+
+* Para concatenar duas strings o plus/+ pode ser utilizado;
+* Para concatenar uma variável a uma String, os símbolos ${} devem ser
+inseridos;
+
+
+#Ex.:
+fun main(){
+	val name = "Ana"
+	val palavra = "Olá"
+	
+	println(palavra + name) // imprime OláAna
+	println("${palavra}, ${name}") // imprime Olá, Ana
+	println("Bem vinda(o), ${name") // imprime Bem vinda(o), Ana
+	
+}
+
+
+# Formatação
+
+
+##################################################################################
+# Nome             |		Função	          |       Métodos                #
+#--------------------------------------------------------------------------------#
+# Capitalização de | Alterar a formatação entre   | capitalize(), toUpperCase()  #
+# string	   | letras minusculas/maiusculas | foLowerCase(), decapitalze() #
+#--------------------------------------------------------------------------------#
+# Remoção de       | Remover espaços vazios e     | trimEnd(), trimStart,        #
+# espaços          | caracteres inadequados       | trim()                       #
+#--------------------------------------------------------------------------------#
+# Substituições de | Substituir caracteres por    | replace(x, y)                # 
+# caracteres       | outros                       |                              #
+#--------------------------------------------------------------------------------#
+# Formatação       | Formatar outros valores para | "padrão"                     #
+#                  | um padrão de string          | ${valor}.format{valor}       #
+##################################################################################

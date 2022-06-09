@@ -1,0 +1,19 @@
+			FUNÇÕES
+
+* Prefixo fun nomeDaFunção(nome:tipo):TipoRetorno{};
+* Funções anônimas, single-line, inline, extensões, Lambdas,
+ordem superior;
+
+#Ex.:
+private fun getFullname(name:String, lastName:String):String{
+	val fullname = "$name $lastName"
+	return fullname
+}
+
+#Ex.:
+private fun getFullname(name:String, lasName:String):String{
+	return "$name $lasName"
+}
+
+#Ex.:
+private fun getFullname(name:String, lasName:String) = "$name $lastName"

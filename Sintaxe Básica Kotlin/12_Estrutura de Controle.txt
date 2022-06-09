@@ -1,0 +1,33 @@
+		ESTRUTURA DE CONTROLE
+
+* if/else, when. elvis operator;
+* Pode ser utilizado tanto para controle quanto para atribuição;
+* Pode ser encadeado com múltiplas estruturas
+
+
+#Ex.:
+fun main(){
+	if(expressao){
+	    bloco de codigo
+	}else if (expressao2){
+	    bloco de codigo
+	}else{
+	    bloco de codigo
+	}
+}
+
+#Ex.:
+fun main(){
+	when {
+	    case1 -> {}
+	    case2 -> {}
+	    case3 -> {}
+	    else -> {}
+	}
+}
+
+#Ex.:
+fun main(){
+	val a:Int? = null
+	val number = a ?: 0
+}

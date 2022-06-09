@@ -1,0 +1,10 @@
+		FUNÇÃO DE ORDEM SUPERIOR
+
+* Recebem outra função ou lambda por parâmetro;
+* Bastante úteis para a generalização de funções e tratamento de erros;
+
+#Ex.:
+fun main(){
+	val x = calculate(12,4,::sum)
+	val y =  calculate(12,4){a,b -> a*b}
+}

@@ -1,0 +1,71 @@
+			###########################
+			# OPERADORES COMPARATIVOS #
+			###########################
+
+      #################################################################
+      #      Função        |    Expressão     |        Comando        #
+      #################################################################	
+      # maior/menor        | a > b ou a < b   | a.compareTo(b) > 0 ou # 
+      #			   |                  | a.compareTo(b) < 0    #
+      #################################################################
+      # maior/menor/igual  | a >= b ou a <- b | a.compareTo(b) >= 0 ou#
+      #			   |                  | a.comparato(b) =< 0   #
+      #################################################################
+      # igual              | a == b           | a.equals(b)           #
+      #################################################################
+      # diferente          | a != b           | !(a.equals(b))        #
+      #################################################################
+
+* Os comandos compareTo retorna os valores -1 (menor que), 0 (igual) ou
+1 (maior). Já os operadores retornam valores booleanos;
+
+* O comando equals retorna um booleano;
+
+
+#Exemplos usando expressão
+
+#Ex¹.:
+fun main(){
+	var numero1 = 22
+	var numero2 = 98
+	var comparar = numero1 > numero2
+	println(comparar) // Resultado false
+}
+#Ex².:
+fun main(){
+	var numero1 = 50
+	var numero2 = 20
+	var comparar = numero1 == numero2
+	println(comparar) // Resultado false
+}
+#Ex³.:
+fun main(){
+	var numero1 = 40
+	var numero2 = 55
+	var comparar = numero1 != numero2
+	println(comparar) // Resultado true
+}
+
+#Exemplos usando comando 
+
+#Ex¹.:
+fun main(){
+	var numero1 = 22
+	var numero2 = 98
+	var comparar = numero1.comparaTo(numero2)
+	println(comparar) // Resultado -1 (menor que)
+}
+#Ex².:
+fun main(){
+	var numero1 = 50
+	var numero2 = 20
+	var comparar =  numero1.equals(numero2)
+	println(comparar) // Resultado false 
+}
+#Ex³.:
+fun main(){
+	var numero1 = 40
+	var numero2 = 55
+	var comparar = !(numero1.equals(numero2))
+	println(comparar) // Resultado true
+}

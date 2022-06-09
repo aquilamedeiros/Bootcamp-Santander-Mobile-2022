@@ -1,0 +1,27 @@
+			EMPTY X BLANK
+
+* Métodos de comparação;
+* String está vazia, em branco ou né nula?;
+* Empty se a string estiver vazia;
+* Blank se a string estiver em branco;
+
+#Ex.:
+fun main(){
+	val s = "" // string vazia // string em branco
+	println(s.isEmpty()) // true
+	println(s.isBlank()) // true
+	println(s.isNullOrBlank() ||
+		s.isNullOrEmpty()) // true
+}
+
+#Ex.:
+fun main(){
+	val s = "   " // string em branco mas não vazia
+	println(s.inEmpty()) // false
+	println(s.isBlank()) // true
+}
+
+
+* Se o tamanho da string (s.length) for 0 está empty e Blank
+* Se o tamanho for > 0 mas todos os caracteres são espaços em branco,
+está blank mas não empty.

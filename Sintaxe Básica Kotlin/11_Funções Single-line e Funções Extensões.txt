@@ -1,0 +1,27 @@
+		FUNÇÕES SINGLE-LINE
+
+* Prefixo fun nomeDaFunção(nome:Tipo) = retorno;
+* Função de uma única linha;
+* Intere o tipo de retorno;
+
+#Ex.:
+private fun getFullname(name:String, lastName:String) = "$name $lastName"
+
+
+#Ex.:
+private fun getFullname(name:String, lastName:String) =
+	"$name $lastName"
+
+
+		
+		FUNÇÕES/EXTENSÕES
+
+
+* Prefixo fun Tipo.nomeDaFunção();
+* Cria uma função que só pode ser chamada por um tipo específico, cujo
+valor pode ser referenciado dentro da função através da palavra this;
+
+
+#Ex.:
+fun String.randomCapitalizeLetter() = 
+	this[0..this.length-1).random()].toUpperCase()

@@ -1,19 +1,18 @@
-###########################
-#  DECLARAÇÃO DE VARIÁVEL #
-###########################
+﻿	###########################
+	#   DECLARAÇÃO DE VARIÁVEL   #
+	###########################
 
 # Var (Valor mutável, Came|Case):
-    * Variável que poode ter seu valor alerado durante o código;
-    * Valor definico e alterado durante a execução;
+    * Variável que pode ter seu valor alterado durante o código;
+    * Valor definido e alterado durante a execução;
     * Ex.: var currentAge = 22;
 
 # Val (Valor mutável, Came|Cas):
-    * Variável que terá somente o valor atribuído (similar ao final
-      em Java);
+    * Variável que terá somente o valor atribuído (similar ao final em Java);
     * Valor definido durante a execução;
     * val currentAge = 22;
 
 # Const Val (Valor imutável, SNAKE_CASE):
-    * Constante cujo valor é atribuido durante a compilação;
+    * Constante cujo valor é atribuído durante a compilação;
     * Variável fixo, não irar ter modificação;
     * const val MIX_AGE = 16

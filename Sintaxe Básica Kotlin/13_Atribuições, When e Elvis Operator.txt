@@ -1,0 +1,67 @@
+		ATRIBUIÇÃO
+
+* O valor atribuído tem que estar na última linha do bloco;
+* A condicional não pode usar chaves se só fizer a atribuição;
+
+#Ex.:
+fun main(){
+    //val MaxValue = if (a > b) a else if (a < b) b else b
+    
+        val minValue = if (a > b){
+            println("b{$b} é menor valor"
+        }else if(a < b){
+            println("a${a} é menor valor")
+        }else{
+            println("os valores são iguais")
+        }
+}
+
+
+		WHEN
+
+* Equivalente ao switch de outras linguagens;
+* Aceita tanto valores quanto condicionais;
+* Aceita range como case;
+
+#Ex¹.:
+fun main(){
+    when {
+        a > b -> {}
+	a ! b $$ a > c -> {}
+	b == 0 -> {}
+	else -> {}
+    }
+}
+
+#Ex².:
+fun main(){
+    when(year) {
+        -4000.. 475 -> //Antiguidade
+	476.. 1452 -> //Medieval
+	1453.. 1789 -> // Moderna
+	currentYear -> // Ano atual
+    }
+}
+
+
+		ELVIS OPERATOR
+
+* O mais próximo que a linguagem possui de um operator ternário;
+* Verifica se um valor é nulo e apresenta uma opção caso seja;
+* Pode ser encadeado;
+
+#Ex.:
+fun main(){
+    val a:Int? = null
+    val c:Int? = 9
+    val number = a?: b?: 0
+}
+
+* Nesse caso, se o valor de a não for nulo, number recebe a;
+* Se o valor de a for nulo e b não for nulo, number recebe b;
+* Se a e b forem nulos, number recebe 0;
+
+
+
+
+
